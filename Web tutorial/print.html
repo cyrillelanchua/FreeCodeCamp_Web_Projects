@@ -3,17 +3,29 @@
 <html>
 
 <head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="print.css">
 <style>
     h2{
         color:red;
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .blue-text{
+        color:blue;
+    }
+    .new-font{
+        font-family: Lobster, 'Times New Roman';
+        /* fonts need to be in '' if there is a space */
+        /* There are two fonts in this case, Time New Roman is the fallback font incase
+            Lobster does not work*/
     }
 </style>
 <title>Cat app browser</title>
 <h1 style="color: blue;">Hello World</h1>
 <h1>hi</h1>
-<h2>CatPhotoApp</h2>
-
+<h2 class="blue-text">CatPhotoApp</h2>
+<h2 >CatPhotoApp</h2>
 </head>
 <!--- this is a comment -->
 <body>
@@ -25,7 +37,7 @@
     <p>Kitty ipsum dolor sit amet, shed everywhere
          shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
     
-    <p>Purr jump eat the grass rip the couch 
+    <p class="new-font">Purr jump eat the grass rip the couch 
         scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
     <div>
     <p>Things that car loves</p>
