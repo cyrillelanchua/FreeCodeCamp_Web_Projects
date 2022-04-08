@@ -27,7 +27,14 @@
         border-width: 10px;
         border-style: solid;
         border-color: rgb(74, 26, 26);
-        border-radius: 10px;
+        border-radius: 50%; /*can also be pixel*/
+    }
+    .silver-background{
+        background-color: silver;
+    }
+    /*id has a higher order than classes*/
+    #cat-photo-form{
+        background-color: green;
     }
 </style>
 <title>Cat app browser</title>
@@ -42,13 +49,14 @@
     <a href="#footer"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" class="smaller-image thick-green-border" alt="this is a picture of a cute cat"/></a>
     <p> View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a> </p>
     <p> This is a dead <a href="#" target="_blank">link</a> </p>
+    <p>Link to padding example -> <a href="padding.html">link</a></p>
     <a href="#footer">Link to footer</a>
     <p>Kitty ipsum dolor sit amet, shed everywhere
          shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
     
     <p class="new-font">Purr jump eat the grass rip the couch 
         scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
-    <div>
+    <div class="silver-background">
     <p>Things that car loves</p>
         <ul>
             <li>yarn</li>
@@ -61,7 +69,7 @@
             <li>other cats</li>
         </ol>
     </div>
-    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <form id="cat-photo-form" action="https://www.freecatphotoapp.com/submit-cat-photo">
         <label for="small"><input id="small" value="small" type="checkbox" name="personality" checked> small </label>
         <label for="medium"><input id="medium" value="medium" type="checkbox" name="personality"> medium </label>
             <label for="large"><input id="large" value="large" type="checkbox" name="personality"> large </label>
