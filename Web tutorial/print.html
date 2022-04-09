@@ -11,8 +11,11 @@
         font-size: 30px;
         font-family: monospace;
     }
+    .red-text{
+        color: red;
+    }
     .blue-text{
-        color:blue;
+        color:blue !important;
     }
     .new-font{
         font-family: Lobster, 'Times New Roman';
@@ -36,15 +39,23 @@
     #cat-photo-form{
         background-color: green;
     }
+
+    [type="checkbox"]{  /* this gives all the type="checkbox" margins of 10px and 15px*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    }
+    body{       /*sets the elemets in body to aqua(all the elements without css)*/
+        color: aqua;
+    }
 </style>
 <title>Cat app browser</title>
 <h1 style="color: blue;">Hello World</h1>
 <h1>hi</h1>
-<h2 class="blue-text">CatPhotoApp</h2>
+<h2 class="red-text blue-text">CatPhotoApp</h2>
 <h2 >CatPhotoApp</h2>
 </head>
 <!--- this is a comment -->
-<body>
+<body style="background: yellow;">
 <main>
     <a href="#footer"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" class="smaller-image thick-green-border" alt="this is a picture of a cute cat"/></a>
     <p> View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a> </p>
