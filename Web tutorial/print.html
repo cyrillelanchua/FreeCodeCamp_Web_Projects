@@ -6,6 +6,11 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="print.css">
 <style>
+    h1{
+        text-align: center;
+        background-color: rgba(45, 45, 45, 0.1);
+                            /*rgb + opacity(0 to 1)*/
+    }
     h2{
         color:red;
         font-size: 30px;
@@ -13,15 +18,20 @@
     }
     .red-text{
         color: red;
+        height: 222px;
     }
     .blue-text{
         color:blue !important;
     }
     .new-font{
         font-family: Lobster, 'Times New Roman';
+        text-align: justify;
         /* fonts need to be in '' if there is a space */
         /* There are two fonts in this case, Time New Roman is the fallback font incase
             Lobster does not work*/
+        width: 200px;
+        background-color: rgba(10,10,10,0.5);
+
     }
     .smaller-image{
         width: 100px;
@@ -29,6 +39,7 @@
     .thick-green-border{
         border-width: 10px;
         border-style: solid;
+        border-color: red;  /*fallback, for compatibility, red will go if rgd is not available*/
         border-color: rgb(74, 26, 26);
         border-radius: 50%; /*can also be pixel*/
     }
@@ -51,22 +62,23 @@
 <title>Cat app browser</title>
 <h1 style="color: blue;">Hello World</h1>
 <h1>hi</h1>
-<h2 class="red-text blue-text">CatPhotoApp</h2>
+<h2 class="red-text blue-text"> <s>CatPhoto</s>App</h2>
 <h2 >CatPhotoApp</h2>
 </head>
 <!--- this is a comment -->
 <body style="background: yellow;">
 <main>
     <a href="#footer"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" class="smaller-image thick-green-border" alt="this is a picture of a cute cat"/></a>
-    <p> View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a> </p>
+    <p> <strong>View</strong> more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a> </p>
     <p> This is a dead <a href="#" target="_blank">link</a> </p>
     <p>Link to padding example -> <a href="padding.html">link</a></p>
     <a href="#footer">Link to footer</a>
-    <p>Kitty ipsum dolor sit amet, shed everywhere
-         shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
-    
+    <p>Kitty <u>underline text is the best </u>ipsum dolor sit amet, shed everywhere
+         shed everywhere <em>this is an italic text</em>stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <hr>
     <p class="new-font">Purr jump eat the grass rip the couch 
         scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+    <hr style="height: 25px; background-color: black;">
     <div class="silver-background">
     <p>Things that car loves</p>
         <ul>
