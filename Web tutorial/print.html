@@ -10,7 +10,29 @@
         text-align: center;
         background-color: rgba(45, 45, 45, 0.1);
                             /*rgb + opacity(0 to 1)*/
+        box-shadow: 10px 10px 1 0px rgba(10,10,10,1), 19px 10px 1px rgba(255, 45, 45, 0.9);
+        opacity: 05;
+        text-transform: lowercase;
+
     }
+    h1:hover{ /*pseudo classes when the element is hovered this happens*/
+        text-align: center;
+        background-color: rgba(235, 40, 40, 1);
+                            /*rgb + opacity(0 to 1)*/
+        box-shadow: 10px 10px 1 0px rgba(10,10,10,1), 19px 10px 1px rgba(255, 45, 45, 0.9);
+        opacity: 05;
+        text-transform: uppercase;
+
+    }
+    #nav-bar{
+        color: black;
+        position: fixed;
+        background-color: aqua;
+        top: 0px;
+        left: 0px;
+        width: 95%;
+    }
+
     h2{
         color:red;
         font-size: 30px;
@@ -18,7 +40,7 @@
     }
     .red-text{
         color: red;
-        height: 222px;
+        height: 102px;
     }
     .blue-text{
         color:blue !important;
@@ -31,7 +53,7 @@
             Lobster does not work*/
         width: 200px;
         background-color: rgba(10,10,10,0.5);
-
+        line-height: 10; /*line spacing*/
     }
     .smaller-image{
         width: 100px;
@@ -51,18 +73,42 @@
         background-color: green;
     }
 
-    [type="checkbox"]{  /* this gives all the type="checkbox" margins of 10px and 15px*/
+    [type="checkbox"]{  /*Attribute Selectors- this gives all the type="checkbox" margins of 10px and 15px*/
     margin-top: 10px;
     margin-bottom: 15px;
     }
     body{       /*sets the elemets in body to aqua(all the elements without css)*/
         color: aqua;
     }
+    .left {
+      float: left;
+      width: 50%;
+    }
+    .right {
+      float: right;
+      width: 40%;
+      
+    }
+    aside, section {
+      padding: 2px;
+      background-color: #ccc
+    }
 </style>
 <title>Cat app browser</title>
+<nav id="nav-bar">
+    this is my nav bar
+</nav>
 <h1 style="color: blue;">Hello World</h1>
 <h1>hi</h1>
 <h2 class="red-text blue-text"> <s>CatPhoto</s>App</h2>
+<section class="left">
+    <h2>section</h2>
+    <p>this is the content</p>
+</section>
+<aside class="right">
+    <h2>aside</h2>
+    <p>this is the content</p>
+</aside>
 <h2 >CatPhotoApp</h2>
 </head>
 <!--- this is a comment -->
