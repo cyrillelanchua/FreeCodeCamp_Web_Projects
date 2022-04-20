@@ -3,6 +3,10 @@
       margin-bottom: -25px;
       text-align: center;
     }
+
+    body {
+    background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")
+  }
   
     .box {
       border-style: solid;
@@ -10,7 +14,9 @@
       border-width: 5px;
       text-align: center;
     }
-  
+    .box:hover{
+      transform: scale(1.1);
+    }
     .yellow-box {
       background-color: yellow;
       padding: 40px 20px 20px 40px;
@@ -38,11 +44,44 @@
       padding-right: 20px;
       border-radius: 50%;
     }
-    
+    .gradient-red-blue{
+      background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+      height: 50px;
+    }
+    .gradient-cyan-pink-green{
+      background: linear-gradient(45deg, cyan, pink, rgb(30, 255, 2));
+      height: 50px;
+    }
+    .gradient-cyan-pink-green:hover{
+      transform: skewY(-10deg);
+    }
+    .repeating-gradient{
+      border-radius: 20px;
+      width: 70%;
+      height: 400px;
+      margin:  50 auto;
+      background: repeating-linear-gradient(
+      45deg,
+      yellow 0px, 
+      blue 40px,
+      green 60px,
+      green 80px
+    ); /*0px [yellow -- blend -- blue] 40px [green -- blend -- green] 80px*/
+    transform: scale(1.2); /*can increase the size of the element*/
+    }
+    .repeating-gradient:hover{
+      transform:skewX(40deg);
+    }
   </style>
+  <body>
   <h5 class="injected-text">margin</h5>
   
   <div class="box yellow-box">
     <h5 class="box red-box">padding</h5>
     <h5 class="box blue-box">padding</h5>
   </div>
+  <div class="box gradient-red-blue"></div>
+  <div class="box gradient-cyan-pink-green"></div>
+  <div style="background: linear-gradient(35deg, #CCFFFF, #FFCCCC); height: 40px"></div>
+  <div class="repeating-gradient"></div>
+  </body>
