@@ -9,6 +9,9 @@
           top: auto;
           overflow: hidden;
         }
+        #p:focus {
+          background-color: yellow;
+        }
         </style>
     </head>
     <body>
@@ -126,6 +129,8 @@
               <!--accesskey are used to allows users to use the keyboard key to focus on that content NOTE: some browsers need alt+<key> to get to that item-->
               Click here for <a href="#" accesskey="l">information about batteries</a> </p>
             
+
+              <p id="p" tabindex="0">This is an important Instructions: Fill in ALL your information then click <b>Submit</b></p>
         </main>
         <footer>&copy; 2018 Camper Cat</footer>
         </body>
