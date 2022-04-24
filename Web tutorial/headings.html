@@ -1,6 +1,15 @@
 <!DOCTYPE html>
     <head>
-
+      <style>
+        .sr-only {
+          position: absolute;
+          left: -10000px;
+          width: 1px;
+          height: 1px;
+          top: auto;
+          overflow: hidden;
+        }
+        </style>
     </head>
     <body>
         
@@ -35,6 +44,88 @@
             <h2>Is Chuck Norris a Cat Person?</h2>
             <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence that anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>
             </article>
+
+            <h2>Audio section</h2>
+            <p>A sound clip of Zersiax's screen reader in action.</p>
+            <audio controls>
+              <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+            </audio>
+            <section>
+              <h2>image using figure</h2>
+              <figure>
+                <img src="https://cf.ltkcdn.net/cats/images/orig/278943-1600x1066-adopting-two-cats-will-they-get-along.jpg">
+                <br>
+                <figcaption>
+                  Two cats
+                </figcaption>
+              </figure>
+            </section>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+      
+      
+            <input type="submit" name="submit" value="Submit">
+
+            <fieldset> <!--not necessary when the choices are simple like gender/ helps accessibility/ groups the radio buttons-->
+              <legend>What level ninja are you?</legend><!--description for the groupings-->
+              <input id="newbie" type="radio" name="levels" value="newbie">
+              <label for="newbie">Newbie Kitten</label><br>
+              <input id="intermediate" type="radio" name="levels" value="intermediate">
+              <label for="intermediate">Developing Student</label><br>
+              <input id="master" type="radio" name="levels" value="master">
+              <label for="master">Master</label>
+            </fieldset>
+            <!--date input-->
+            <label for="pickdate">Preferred Date:</label>
+            <input type="date" id="pickdate" name="date">
+
+            <!--Using datetime and superscript-->
+            <p>Thank you to everyone for responding to Master Camper Cat's survey. 
+              The best day to host the vaunted Mortal Kombat tournament is 
+              <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>.
+               May the best ninja win!</p>
+
+               <!-- for screen readers/ visually impaired it is in the html but is hidden from the view of common users/ hidden using the css-->
+               <table class="sr-only">
+                <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th scope="col">Stealth &amp; Agility</th>
+                    <th scope="col">Combat</th>
+                    <th scope="col">Weapons</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Week One</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Week Two</th>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Week Three</th>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>13</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!--for links avoid using "CLick here" instead be more descriptive-->
+              <!--accesskey are used to allows users to use the keyboard key to focus on that content NOTE: some browsers need alt+<key> to get to that item-->
+              Click here for <a href="#" accesskey="l">information about batteries</a> </p>
+            
         </main>
         <footer>&copy; 2018 Camper Cat</footer>
         </body>

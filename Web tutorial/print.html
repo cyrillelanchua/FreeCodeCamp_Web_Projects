@@ -156,12 +156,12 @@
         <input type="text" placeholder="cat photo URL" required>
         <button type="submit">Submit</button>
         <br>
-        <label for="indoor">
+        <label for="indoor"> <!--for should be the same as the id attribute-->
             <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>indoor
           </label>
           <label for="outdoor">
             <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">outdoor
-          </label>
+          </label><!--if the user picks outdoor the value that will be sent is "indoor-outdoor=outdoor" which is gotten by combining the value and name attributes-->
     </form>
     <!-- form tag allows to submit data to a server action="server to submit to"-->
 </main>
