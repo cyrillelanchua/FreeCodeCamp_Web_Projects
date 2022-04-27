@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
       <style>
-        .sr-only {
+        .sr-only { /*screen reader only*/
           position: absolute;
           left: -10000px;
           width: 1px;
@@ -11,6 +11,17 @@
         }
         #p:focus {
           background-color: yellow;
+        }
+        /*allows the image to resize depending on the screen/ read onenote for more info*/
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+        /*when width is less than 800px the color is brown*/
+        @media( max-width: 800px ){ 
+          h1, h2{
+            color: brown;
+          }
         }
         </style>
     </head>

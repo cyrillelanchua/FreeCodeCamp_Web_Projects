@@ -72,6 +72,23 @@
     .repeating-gradient:hover{
       transform:skewX(40deg);
     }
+    #box-container {
+    height: 500px;
+    display: flex;/*allows the chiled element to be in a row/column using the flex display*/
+    flex-direction: row; /*now box-1 and box-2 are on a row*/
+  }
+
+  #box-container #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
   </style>
   <body>
   <h5 class="injected-text">margin</h5>
@@ -84,4 +101,9 @@
   <div class="box gradient-cyan-pink-green"></div>
   <div style="background: linear-gradient(35deg, #CCFFFF, #FFCCCC); height: 40px"></div>
   <div class="repeating-gradient"></div>
+
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
   </body>
