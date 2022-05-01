@@ -1,9 +1,23 @@
 <style>
     .d1{background:LightSkyBlue;}
-    .d2{background:LightSalmon;}
-    .d3{background:PaleTurquoise;}
+    .d2{background:LightSalmon;
+    justify-self: center;
+    align-self: center;}
+    .d3{background:PaleTurquoise;
+      align-self: end;}
     .d4{background:LightPink;}
-    .d5{background:PaleGreen;}
+    .d5{background:PaleGreen;
+        grid-column: 2/4;
+        grid-row: 2/4;;
+    }
+    .d6{
+      background-color: red;
+      grid-area: feet;
+    }
+    .d7{
+      background-color: pink;
+      grid-area: 3/1/4/2; /*places the 7 on the 3rd row 1st column*/
+    }
   
     .container {
     font-size: 40px;
@@ -15,9 +29,15 @@
     grid-template-columns: 1fr 100px 2fr;
     grid-column-gap:20px;
     /* Only change code above this line */
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 100px 50px 50px 50px; /*creates 3 rows each 50px*/
     grid-row-gap: 10px;
     grid-gap: 10px 20px;
+
+    grid-template-areas:
+      "header header header"  /*number 1 2 3 are header group*/
+      "advert content content"  /*number 4 is advert; number 5 is content and footer*/
+      "footer footer footer"
+      "feet feet feet ";
     }
   </style>
   
@@ -27,4 +47,6 @@
     <div class="d3">3</div>
     <div class="d4">4</div>
     <div class="d5">5</div>
+    <div class="d6">6</div>
+    <div class="d7">7</div>
   </div>
