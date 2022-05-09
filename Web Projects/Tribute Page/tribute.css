@@ -1,0 +1,42 @@
+
+
+body{
+    background: rgb(220, 177, 103);
+    text-align:center;
+  }
+  hr{
+    background-color: orange;
+    height: 10px;
+  }
+  main{
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: rgb(241, 201, 58);
+    border-width: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 1000px;
+    height: auto;
+    margin: auto
+  }
+  #section-image{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: auto;
+  }
+  #image{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto; 
+    display: block;
+  }
+  
+  /*tribute-info is repecting the size of section image and not the image */
+  /*that is why it is overlapping with the image*/
+  #tribute-info{
+    margin: auto;
+    text-align: justify;
+    width: 500px;
+  }
