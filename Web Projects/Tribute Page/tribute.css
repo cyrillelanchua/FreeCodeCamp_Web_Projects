@@ -19,7 +19,7 @@ body{
     height: auto;
     margin: auto
   }
-  #section-image{
+  #article-image{
     text-align: center;
     margin: auto;
     width: 500px;
@@ -38,5 +38,19 @@ body{
   #tribute-info{
     margin: auto;
     text-align: justify;
-    width: 500px;
+    width: 800px;
   }
+
+#section-works{
+  display: block;
+}
+
+#p-work{
+  float:left;
+  width: 50%;
+}
+
+#figure-work{
+  float:right;
+
+}
