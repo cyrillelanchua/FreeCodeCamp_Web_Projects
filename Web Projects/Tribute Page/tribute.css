@@ -43,14 +43,17 @@ body{
 
 #section-works{
   display: block;
+  height: 300px;
+  width: 800px;
 }
 
-#p-work{
-  float:left;
-  width: 50%;
+#info{
+  float: left;
+  width: 70%;
 }
 
-#figure-work{
-  float:right;
-
+#image-work{
+  text-align: left;
+  float: right;
+  width: 30%;
 }
