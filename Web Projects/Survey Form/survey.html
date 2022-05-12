@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html id="main">
+  <head>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please provide a feedback by answering this survey form. Thank you.</p>
+  </head>
+  <body>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your Name" required>
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <label id="number-label" for="number">Age(optional):</label>     
+        <input type="number" id="number" placeholder="Enter your age" min="0" max="120">
+
+        <label id="dropdown-label" for="dropdown ">Subject:</label>
+        <select name="subjects" id="dropdown">
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Computer">Computer</option>
+          <option value="Ethics">Ethics</option>
+          <option value="History">History</option>
+          <option value="English">English</option>                    
+        </select>
+
+        <input id="radio-male" type="radio" name="genders" value="Male">
+        <label for="radio-male">Male</label>
+        <br>
+        <input id="radio-Female" type="radio" name="genders" value="Female">
+        <label for="radio-Female">Female</label>
+      </form>
+    </main>
+  </body>
+</html>
