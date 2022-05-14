@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="main">
+<html>
   <head>
     <link rel="stylesheet" type="text/css" href="survey.css">
     <h1 id="title">Survey Form</h1>
@@ -8,28 +8,50 @@
   <body>
     <main>
       <form id="survey-form">
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your Name" required>
-        <label id="email-label" for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your Email" required>
-        <label id="number-label" for="number">Age(optional):</label>     
-        <input type="number" id="number" placeholder="Enter your age" min="0" max="120">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" class="input-box" id="name" placeholder="Enter your Name" required><br>
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" class="input-box" id="email" placeholder="Enter your Email" required><br>
+        <label id="number-label" for="number">Age(optional)</label><br>   
+        <input type="number" id="number" class="input-box" placeholder="Age" min="0" max="120"><br>
 
-        <label id="dropdown-label" for="dropdown ">Subject:</label>
-        <select name="subjects" id="dropdown">
-          <option value="Math">Math</option>
-          <option value="Science">Science</option>
-          <option value="Computer">Computer</option>
-          <option value="Ethics">Ethics</option>
-          <option value="History">History</option>
-          <option value="English">English</option>                    
-        </select>
+        <label id="dropdown-label" for="dropdown ">Gender</label><br>
+        <select name="genders" id="dropdown" class="input-box">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
 
-        <input id="radio-male" type="radio" name="genders" value="Male">
-        <label for="radio-male">Male</label>
-        <br>
-        <input id="radio-Female" type="radio" name="genders" value="Female">
-        <label for="radio-Female">Female</label>
+        <h2>Please rate the event:</h2>
+        <input id="great" value="great" type="radio" name="rating">
+        <label class="radio-label" for="great">Great!</label><br>
+        <input id="good" value="good" type="radio" name="rating">
+        <label class="radio-label" for="good">Good</label><br>
+        <input id="okay" value="okay" type="radio" name="rating">
+        <label class="radio-label" for="okay">Okay</label><br>
+        <input id="bad" value="bad" type="radio" name="rating">
+        <label class="radio-label" for="bad">Bad</label><br>
+        <input id="terrible" value="terrible" type="radio" name="rating">
+        <label class="radio-label" for="terrible">Terrible</label>                
+        <h2>What did you like?</h2>
+        <input type="checkbox" id="presentation" name="like" value="presentation" >
+        <label class="checkbox-label" for="presentation">Presentation</label><br>
+
+        <input type="checkbox" id="speaker" name="like" value="speaker" >
+        <label class="checkbox-label" for="speaker">Speaker</label><br>
+
+        <input type="checkbox" id="event" name="like" value="event" >
+        <label class="checkbox-label" for="event">Event</label><br>
+
+        <input type="checkbox" id="venue" name="like" value="venue" >
+        <label class="checkbox-label" for="venue">Venue</label><br>
+
+        <input type="checkbox" id="organization" name="like" value="organization" >
+        <label class="checkbox-label" for="organization">Organization</label><br>
+
+        <h2 id="h2-comment">Additional comments:</h2>
+        <textarea id="comment" name="comments" rows="4" cols="50" placeholder="Additional comment(Optional)"></textarea> 
+      
+      <input id="submit" type="submit" value="Submit">         
       </form>
     </main>
   </body>

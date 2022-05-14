@@ -1,4 +1,77 @@
+html{
+  background-color: #8288f1;
+  padding-bottom: 40px;
+}
+
+head{
+  width: 583px;
+  margin:auto;
+}
+
 #title{
-    margin: auto;
-    color:  red;
-  }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#description{
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#title, #description{
+  width: 583px;
+  text-align:center;
+  color:rgb(255, 255, 255);
+}
+
+main{
+  margin: auto;
+  border-style:solid;
+  border-radius: 5px;
+  border-color: #4c8fed;
+  border-width: 10px;
+  padding: 40px 50px 80px 50px;
+  background-color: rgb(68, 68, 234);
+  width: 583px;
+  height: 820px;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color:aliceblue;
+  font-weight: 500;
+}
+
+.input-box{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#name, #email{
+  width: 575px;
+}
+
+h2{
+  color:aliceblue;
+}
+
+#h2-comment{
+  margin-bottom: 5px;
+}
+
+#comment{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#submit{
+  height: 30px;
+  width: 583px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
