@@ -1,9 +1,9 @@
-html{
+body{
   background-color: #8288f1;
   padding-bottom: 40px;
 }
 
-head{
+header{
   width: 583px;
   margin:auto;
 }
@@ -11,13 +11,11 @@ head{
 #title{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 50px;
-  margin: auto;
   margin-bottom: 20px;
 }
 
 #description{
   font-size: 20px;
-  margin: auto;
   margin-bottom: 10px;
 }
 
