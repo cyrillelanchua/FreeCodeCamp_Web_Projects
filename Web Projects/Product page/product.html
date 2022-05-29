@@ -3,15 +3,15 @@
 	<head>
         <link rel="stylesheet" href="product.css">
 	</head>
-	<body>
+	<body name="top">
 	    <header id="header">
-            <img id="header-img" src="https://www.plantgrower.org/uploads/6/5/5/4/65545169/croppedimage570400-19690129-lsweetcorn_orig.jpg">
+            <a href="#top"><img id="header-img" src="https://www.plantgrower.org/uploads/6/5/5/4/65545169/croppedimage570400-19690129-lsweetcorn_orig.jpg"></a>
             <nav id="nav-bar">
                 <ul>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#products">Products</a></li>
                     <li><a class="nav-link" href="#history">History</a></li>
-                    <li><a class="nav-link" href="#stores">Stores</a></li>
+                    <li><a class="nav-link" href="#footer">Stores</a></li>
                 </ul>
             </nav>
 		</header>
@@ -19,11 +19,13 @@
             <article>
                 <section id="main-section">
                     <section id="main-text">
-                        <h1>Best corn shops in the world</h1>
+                        <h1>Best corns in the world</h1>
                     </section>
                     <img id="main-img0" src="https://thumbs.dreamstime.com/b/corn-field-perspective-sunset-57244090.jpg">
+
                 </section>
                 <section id="about">
+                    <h2>About</h2>
                     <p>Corn, also known as maize, is a starchy vegetable that comes as kernels on a cob, covered by a husk. Corn is one of the most popular vegetables in the U.S. that sometimes gets a bad rap because it has a lot of natural sugar and carbs. But don't overlook the health benefits of this versatile veggie.
 
                         Corn is a favorite of summertime cookouts. Popped, it makes the perfect snack for movie nights or parties. Dried and ground into flour, its seeds become cornmeal for tortillas, chips, and crackers. In this form, it's a grain, not a vegetable.
@@ -32,27 +34,36 @@
 
                         Natives of North and South America grew corn, which they called maize. Europeans who came to New England learned about it and brought it back to their home countries. The pilgrims of Plymouth Colony and members of the Wampanoag Tribe probably ate corn at the first Thanksgiving dinner in 1621.</p>
                 </section>
-                <section id="products">
-                    <h2 id="product-header">Corn Foods</h2>
-                    <img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg">
-                    <img class="product-img" src="https://world-stfood.com/wp-content/uploads/2021/12/American-Corn-3-Ways-Cheese-Chilli-Masala-Butter-Sweet-Corn-Recipe-CookingShooking-730x410.jpg">
-                    <img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg">
-                    <img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg">
+                <section >
+                    <h2>Corn Foods</h2>
+                    <section id="products">
+                        <a href="#"><img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg"></a>
+                        <a href="#"><img class="product-img" src="https://world-stfood.com/wp-content/uploads/2021/12/American-Corn-3-Ways-Cheese-Chilli-Masala-Butter-Sweet-Corn-Recipe-CookingShooking-730x410.jpg"></a>
+                        <a href="#"><img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg"></a>
+                        <a href="#"><img class="product-img" src="https://thumbs.dreamstime.com/z/cooking-corn-grill-grilled-golden-sweet-cobs-coals-popular-food-asian-street-market-philippines-vegetable-fire-185554420.jpg"></a>
+                    </section>
                 </section>
-                <section id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/i6teBcfKpik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <section id="video-section">
+                    <h2 id="history">History</h2>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/i6teBcfKpik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
                 <section>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email">
-                    <input id="submit" type="submit">
-                </form>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <label for="email">Email</label><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input id="submit" type="submit">
+                    </form>
                 </section>
 
             </article>
 		</main>
-		<footer>
-		</footer>
+        <footer id="footer">
+            <ul>
+              <li><a class="footer-link" href="#">Privacy</a></li>
+              <li><a class="footer-link" href="#">Terms</a></li>
+              <li><a class="footer-link" href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2016, Original Trombones</span>
+        </footer>
 	</body>
 </html>
