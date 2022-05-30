@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!-- MDB -->
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+        ></script>
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="documentation.css">
+	</head>
+	<body>
+		<!--Main Navigation-->
+<header>
+    <!-- Sidebar -->
+    <nav id="navbar" class="collapse d-lg-block sidebar collapse bg-white">
+      <header>
+            <h2>menu</h2>
+      </header>
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a
+            href="#navbar"
+            class="nav-link list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
+            <span>Introduction</span>
+          </a>
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple active">
+           <span>Hello World</span>
+          </a>
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>Data types</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>String</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple">
+            <span>Array</span>
+          </a>
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ></i><span>Dictionary</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>If else Statement</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>Looping</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>Function</span></a
+          >
+          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>Lambda</span></a
+          >
+          <a href="#class" class="nav-link list-group-item list-group-item-action py-2 ripple"
+            ><span>Classes</span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#sidebarMenu"
+          aria-controls="sidebarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            height="25"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Search form -->
+        <form class="d-none d-md-flex input-group w-auto my-auto">
+          <input
+            autocomplete="off"
+            type="search"
+            class="form-control rounded"
+            placeholder='Search (ctrl + "/" to focus)'
+            style="min-width: 225px;"
+          />
+          <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+        </form>
+
+
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main id="main-doc" style="margin-top: 58px;">
+    <article>
+        <section id="introduction" class="main-section">
+          <h2>Introduction</h2>
+          <p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.</p>
+          <p>Some programming-language features of Python are:</p>
+          <ul>
+            <li>A variety of basic data types are available: numbers (floating point, complex, and unlimited-length long integers), strings (both ASCII and Unicode), lists, and dictionaries.</li>
+            <li>Python supports object-oriented programming with classes and multiple inheritances.</li>
+            <li>Code can be grouped into modules and packages.</li>
+            <li>The language supports raising and catching exceptions, resulting in cleaner error handling.</li>
+            <li>Data types are strongly and dynamically typed. Mixing incompatible types (e.g. attempting to add a string and a number) causes an exception to be raised, so errors are caught sooner.</li>
+            <li>Python contains advanced programming features such as generators and list comprehensions.</li>
+            <li>Python's automatic memory management frees you from having to manually allocate and free memory in your code.</li>
+          </ul>
+          <p>Writing Pythonic code is not hard---but you have to get used to the (PEP) code style rules. You can test, check, and improve your code style at online resources such as Pythonchecker.com.</p>
+        </section>
+        <section id="hello" class="main-section">
+          <h2>Hello World</h2>
+          <p>Let's start by creating a very simple print statement:</p>
+          <code>print("Hello World")</code><br><br>
+          <p>Typing this into the interpreter and running the code will print a "Hello World" string into the console.</p>
+          <p>Now let's try printing more statements into the console!</p>
+          <code>print("I am" + " Learning")</code><br>
+          <code>print("Python!")</code><br><br>
+          <p>
+            As you can see we added a + into the print function separating two strings. The + combined the two strings in the print function.
+            Using the print function also automatically creates a new line at the end.
+          </p>
+        </section>
+        <section id="data" class="main-section">
+          <h2>Data Types</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="string" class="main-section">
+          <h2>String</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="array" class="main-section">
+          <h2>Array</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="dictionary" class="main-section">
+          <h2>Dictionary</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="ifelse" class="main-section">
+          <h2>If else Statement</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="loop" class="main-section">
+          <h2>Looping </h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="function" class="main-section">
+          <h2>Function</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="lambda" class="main-section">
+          <h2>Lambda</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+        <section id="class" class="main-section">
+          <h2>Class</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </section>
+    </article>
+  </main>
+  <!--Main layout-->
+		<footer>
+		</footer>
+	</body>
+</html>
