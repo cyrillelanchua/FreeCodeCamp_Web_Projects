@@ -28,9 +28,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   }
-  .navbar-brand{
-    margin-left: 30px;
-  }
+
   .sidebar-sticky {
     position: relative;
     top: 0;
@@ -43,6 +41,4 @@ body {
 
   section{
     margin-bottom: 20px;
-    margin-top: -50px;  /*this fixes the scroll of the page when a link is clicked*/
-    padding-top: 50px;
   }
