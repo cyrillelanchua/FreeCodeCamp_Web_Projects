@@ -25,49 +25,50 @@
 	<body>
 		<!--Main Navigation-->
 <header>
+    <p>MAIN</p>
     <!-- Sidebar -->
     <nav id="navbar" class="collapse d-lg-block sidebar collapse bg-white">
-      <header>
+      <header id="menu-header">
             <h2>menu</h2>
       </header>
       <div class="position-sticky">
-        <div class="list-group list-group-flush mx-3 mt-4">
+        <div class="list-group list-group-flush mx-3 mt-4 ">
           <a
-            href="#navbar"
+            href="#introduction"
             class="nav-link list-group-item list-group-item-action py-2 ripple"
             aria-current="true"
           >
             <span>Introduction</span>
           </a>
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple active">
+          <a href="#hello_world" class="nav-link list-group-item list-group-item-action py-2 ripple">
            <span>Hello World</span>
           </a>
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#data_types" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>Data types</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#string" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>String</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple">
+          <a href="#array" class="nav-link list-group-item list-group-item-action py-2 ripple">
             <span>Array</span>
           </a>
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#dictionary" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ></i><span>Dictionary</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#if_else_statement" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>If else Statement</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#looping" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>Looping</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#function" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>Function</span></a
           >
-          <a href="#" class="nav-link list-group-item list-group-item-action py-2 ripple"
+          <a href="#lambda" class="nav-link list-group-item list-group-item-action py-2 ripple"
             ><span>Lambda</span></a
           >
           <a href="#class" class="nav-link list-group-item list-group-item-action py-2 ripple"
-            ><span>Classes</span></a
+            ><span>Class</span></a
           >
         </div>
       </div>
@@ -94,9 +95,9 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#">
           <img
-            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
             height="25"
-            alt="MDB Logo"
+            alt="Python Logo"
             loading="lazy"
           />
         </a>
@@ -124,7 +125,7 @@
   <main id="main-doc" style="margin-top: 58px; margin-left: 20px;">
     <article>
         <section id="introduction" class="main-section">
-          <h2>Introduction</h2>
+          <header><h2>Introduction</h2></header>
           <p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.</p>
           <p>Some programming-language features of Python are:</p>
           <ul>
@@ -138,8 +139,8 @@
           </ul>
           <p>Writing Pythonic code is not hard---but you have to get used to the (PEP) code style rules. You can test, check, and improve your code style at online resources such as Pythonchecker.com.</p>
         </section>
-        <section id="hello" class="main-section">
-          <h2>Hello World</h2>
+        <section id="hello_world" class="main-section">
+          <header><h2>Hello World</h2></header>
           <p>Let's start by creating a very simple print statement:</p>
           <code>print("Hello World")</code><br><br>
           <p>Typing this into the interpreter and running the code will print a "Hello World" string into the console.</p>
@@ -151,8 +152,8 @@
             Using the print function also automatically creates a new line at the end.
           </p>
         </section>
-        <section id="data" class="main-section">
-          <h2>Data Types</h2>
+        <section id="data_types" class="main-section">
+          <header><h2>Data Types</h2></header>
           <p>In programming, data type is an important concept.<br>
             Variables can store data of different types, and different types can do different things.</p>
           <p>Python has the following data types built-in by default, in these categories:</p>
@@ -166,7 +167,7 @@
           <p>None Type:&nbsp;&nbsp;&nbsp;<code>NoneType</code></p>
         </section>
         <section id="string" class="main-section">
-          <h2>String</h2>
+          <header><h2>String</h2></header>
           <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.<br><br>
 
             <code>'hello'</code> is the same as <code>"hello"</code>.<br><br>
@@ -174,7 +175,7 @@
             You can display a string literal with the <code>print()</code> function:</p>
         </section>
         <section id="array" class="main-section">
-          <h2>Array</h2>
+          <header><h2>Array</h2></header>
           <p>Lists are used to store multiple items in a single variable.<br><br>
 
             Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.<br><br>
@@ -183,52 +184,105 @@
             <code>mylist = ["apple", "banana", "cherry"]</code>
         </section>
         <section id="dictionary" class="main-section">
-          <h2>Dictionary</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <header><h2>Dictionary</h2></header>
+          <p>Dictionaries are used to store data values in key:value pairs.<br><br>
+
+            A dictionary is a collection which is ordered*, changeable and do not allow duplicates.</p>
+          <h3>Dictionary Items</h3>
+          <p>Dictionary items are ordered, changeable, and does not allow duplicates.<br><br>
+
+            Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</p>
+          <code>thisdict = {<br>
+            &#160 "brand": "Ford",<br>
+            &#160 "model": "Mustang",<br>
+            &#160 "year": 1964<br>
+          }<br>
+          print(thisdict["brand"])</code>
         </section>
-        <section id="ifelse" class="main-section">
-          <h2>If else Statement</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <section id="if_else_statement" class="main-section">
+          <header><h2>If else Statement</h2></header>
+          <p>Python supports the usual logical conditions from mathematics:
+
+            Equals: <code>a == b</code><br><br>
+            Not Equals: <code>a != b</code><br><br>
+            Less than: <code>a < b</code><br><br>
+            Less than or equal to: <code>a <= b</code><br><br>
+            Greater than: <code>a > b</code><br><br>
+            Greater than or equal to: <code>>= b</code><br><br>
+            These conditions can be used in several ways, most commonly in "if statements" and loops.<br><br>
+
+            An "if statement" is written by using the if keyword.</p>
         </section>
-        <section id="loop" class="main-section">
-          <h2>Looping </h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <section id="looping" class="main-section">
+          <header><h2>Looping</h2></header>
+          <p>Python has two primitive loop commands:<br><br>
+
+            while loops<br><br>
+            for loops<br></p>
+          <h3>While loops</h3>
+          <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+          <p>Print i as long as i is less than 6:</p>
+          <code>i = 1<br>
+            while i < 6:<br>
+            &#160 print(i)<br>
+            &#160 i += 1</code>
+          <h3>Python For Loops</h3>
+          <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br><br>
+
+            This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br><br>
+
+            With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+          <p>Print each fruit in a fruit list:</p>
+          <code>fruits = ["apple", "banana", "cherry"]<br>
+            for x in fruits:<br>
+              &#160 print(x)</code>
         </section>
         <section id="function" class="main-section">
-          <h2>Function</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <header><h2>Function</h2></header>
+          <p>A function is a block of code which only runs when it is called.<br><br>
+
+            You can pass data, known as parameters, into a function.<br><br>
+
+            A function can return data as a result.<br><br>
+
+            In Python a function is defined using the def keyword:
+          </p>
+          <code>def my_function():<br>
+            &#160 print("Hello from a function")</code>
         </section>
         <section id="lambda" class="main-section">
-          <h2>Lambda</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <header><h2>Lambda</h2></header>
+          <p>
+            A lambda function is a small anonymous function.<br><br>
+
+            A lambda function can take any number of arguments, but can only have one expression.<br><br>
+
+            Summarize argument a, b, and c and return the result:</p>
+            <code>x = lambda a, b, c : a + b + c<br>
+              print(x(5, 6, 2))</code><br><br>
+              <p>Use that function definition to make a function that always doubles the number you send or<br>
+                use the same function definition to make a function that always triples the number you send
+              </p>
+            <code>def myfunc(n):<br>
+              return lambda a : a * n<br><br>
+
+            mydoubler = myfunc(2)<br>
+            mytripler = myfunc(3)<br><br>
+
+            print(mydoubler(11))<br>
+            print(mytripler(11))</code>
         </section>
         <section id="class" class="main-section">
-          <h2>Class</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <header><h2>Class</h2></header>
+          <p>Python is an object oriented programming language.<br><br>
+
+            Almost everything in Python is an object, with its properties and methods.<br><br>
+
+            A Class is like an object constructor, or a "blueprint" for creating objects.<br><br>
+
+            Create a class named MyClass, with a property named x:</p>
+          <code>class MyClass:<br>
+            &#160 x = 5</code>
         </section>
     </article>
   </main>
