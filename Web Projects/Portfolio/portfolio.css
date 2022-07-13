@@ -43,15 +43,13 @@ body{
 #projects-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, );
+    grid-template-rows: repeat(auto-fit, 1fr);
     row-gap: 20px;
     column-gap: 20px;
     background-color: aqua;
     height: 77vh;
     width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    grid-auto-rows: min-content;
+
 }
 
 #red{

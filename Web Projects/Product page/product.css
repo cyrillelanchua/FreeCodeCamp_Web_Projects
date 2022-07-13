@@ -73,6 +73,7 @@
       padding-bottom: 50px;
       text-align: justify;
   }
+
   #products{
       height: 300px;
       width: 950px;
@@ -80,7 +81,6 @@
       grid-template-columns: 200px 200px 200px 200px;
       grid-row: 200px;
       margin: auto;
-      margin-left: 480px;
       column-gap: 50px;
       grid-template-areas:
       "product1 product2 product3 product4";
