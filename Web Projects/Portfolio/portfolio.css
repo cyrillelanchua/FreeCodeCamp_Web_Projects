@@ -29,26 +29,52 @@ body{
 #projects{
     width: 60vw;
     height: 90vh;
-    background-color: red;
+    background-color: rgb(40, 41, 44);
     margin: auto;
+    padding: 50px 0px 50px 0px;
+}
+
+#projects-header{
+    color: white;
+
+    padding-bottom: 3vh;
 }
 
 #projects-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: aqua;
+    height: 77vh;
+    width: auto;
+
+}
+
+#red{
+    background-color: red;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #card1{
-    grid-area: 1/1/1/1;
+
+
 }
 
 #card9{
-    grid-area: 3/3/4/4; 
-}
 
+}
+#contacts{
+    height: 30vh;
+    background-color: rgb(0, 110, 255);
+    margin-top: 20vh;
+}
 footer{
-    height: 70px;
+    height: 70vh;
 }
 @media only screen and (max-width: 600px) {
     body {
