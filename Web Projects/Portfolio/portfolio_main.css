@@ -46,7 +46,7 @@ body{
     display: flex;
     width: auto;
     height: auto;
-    max-width: 60vw;
+    max-width: 70vw;
     justify-content: space-around;
     align-content: flex-start;
     background-color: aqua;
@@ -71,7 +71,7 @@ body{
     flex: 1;
 }
 .projects{
-    margin: 40px;
+    margin: 20px;
     min-height: 300px;
     min-width: 300px;
     max-height: 300px;
@@ -82,20 +82,19 @@ body{
     width: 100%;
     background-color: blue;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .contacts{
     background-color: black;
-    margin: 20px;
     height: 100px;
-    margin: auto;
+    width: 100px;
 }
 footer{
     height: 50vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
       background-color: lightblue;
     }
