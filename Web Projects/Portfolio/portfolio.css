@@ -18,6 +18,10 @@ body{
 }
 
 
+.carousel-indicators{
+    z-index: 1;
+}
+
 .carousel-image{
     width: 100%;
     height: 90vh;

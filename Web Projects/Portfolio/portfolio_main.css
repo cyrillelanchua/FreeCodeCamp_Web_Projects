@@ -9,27 +9,46 @@ body{
     z-index: 2;
 }
 
+.nav-link{
+    font-size: 20px;
+}
+
 #welcome-section{
     width: 100%;
+    height: 110vh;
     padding-top: 70px;
-    background-color: aqua;
+    background-color: rgb(22, 54, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #welcome-message{
-    position: fixed;
+    color: aliceblue;
+}
+#welcome-message2{
+    color: rgb(141, 179, 211);
+}
+#welcome-btn {
+    background-color: DodgerBlue; 
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
 }
 
-.carousel-indicators{
-    z-index: 1;
+.hover-effect:hover{
+    animation-name: hover-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes hover-color {
+    100% {
+      background-color: #6ab5f7;
+    }
 }
 
-.carousel-image{
-    width: 100%;
-    height: 90vh;
-    max-height: 100%;
-    max-width: 100%;
-    background-color: black;
-}
 
 #projects-section{
     max-width: 100%;
@@ -53,10 +72,10 @@ body{
     display: flex;
     width: auto;
     height: auto;
-    max-width: 70vw;
+    max-width: 80vw;
     justify-content: space-around;
     align-content: flex-start;
-    background-color: aqua;
+ 
     flex-wrap: wrap;
     margin:auto;
 }
@@ -78,54 +97,93 @@ body{
     flex: 1;
 }
 .projects{
-    margin: 20px;
+    margin: 25px;
 
-    min-height: 300px;
-    min-width: 300px;
-    max-height: 300px;
-    max-width: 300px;
+    min-height: 425px;
+    min-width: 350px;
+    max-height: 425px;
+    max-width: 350px;
 }
+
+.project-images{
+    min-height: 350px;
+    min-width: 350px;
+    max-height: 350px;
+    max-width: 350px;
+}
+
+.project-btns{
+    height: 75px;
+    width: 350px;
+    background-color: DodgerBlue; 
+    border: none;
+    color: aliceblue;
+}
+#btn-section{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-btn{
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    background-color: DodgerBlue; 
+    color: aliceblue;
+}
+
 #contacts-section{
     height: 500px;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(22, 54, 152);
 }
 #contacts-header{
-    height: 100px;
+    padding-top: 80px;
+    height: 80px;
     width: 100%;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(22, 54, 152);
 }
 #contacts-container{
-    height: 300px;
-    width: 100%;
+    margin: auto;
+    padding-bottom: 100px;
+    height: 400px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.contacts{
-    background-color: black;
-    height: 100px;
-    width: 100px;
+.contact-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
 }
 footer{
     height: 15vh;
 }
 
 @media only screen and (max-width: 800px) {
-    body {
-      background-color: lightblue;
-    }
-    #welcome-section{
-        width: 50vw;
-    }
-
-
     .projects{
         margin: 10px;
+        min-height: 200px;
+        min-width: 150px;
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .project-images{
         min-height: 150px;
         min-width: 150px;
         max-height: 150px;
         max-width: 150px;
+    }
+    
+    .project-btns{
+        height: 50px;
+        width: 150px;
     }
 }
